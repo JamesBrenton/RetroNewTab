@@ -1,6 +1,6 @@
 /*Tags*/
 body {
-  background-color: #00F3FC;
+  background-color: #000000;
 }
 header {
   background-color: #222222;
@@ -17,7 +17,7 @@ article {
   justify-content: center;
 }
 
-section {
+a {
   min-height: 150px;
   min-width: 150px;
   flex-basis: 24%;
@@ -32,7 +32,7 @@ img {
   height: auto;
 }
 footer {
-   background-color: #222222;
+   background-color: #000000;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -68,28 +68,28 @@ h2 {
 }
 /* Customize each container */
 
-  section:nth-child(1) {
+  a:nth-child(1) {
     background-color: #0000AA;
   }
-  section:nth-child(2) {
+  a:nth-child(2) {
     background-color: #0000AA;
   }
-  section:nth-child(3) {
+  a:nth-child(3) {
     background-color: #0000AA;
   }
-  section:nth-child(4) {
+  a:nth-child(4) {
     background-color: #0000AA;
   }
-  section:nth-child(5) {
+  a:nth-child(5) {
     background-color: #0000AA;
   }
-  section:nth-child(6) {
+  a:nth-child(6) {
     background-color: #0000AA;
   }
-  section:nth-child(7) {
+  a:nth-child(7) {
     background-color: #0000AA;
   }
-  section:nth-child(8) {
+  a:nth-child(8) {
     background-color: #0000AA;
   }
 
@@ -100,7 +100,7 @@ h2 {
   h2 {
     font-size: 4vw
   }
-  article section {
+  article a {
     flex-basis: 45%;
   }
 }
@@ -109,7 +109,7 @@ h2 {
   h2 {
     font-size: 5vw;
   }
-  article section {
+  article a {
     flex-basis: 100%;
   }
 }
