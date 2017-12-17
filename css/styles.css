@@ -1,0 +1,290 @@
+/*Tags*/
+body {
+  background-color: #000000;
+}
+header {
+  background-color: #222222;
+  color: #FCD302FF;
+}
+main {
+  width: 90%;
+  margin: auto;
+}
+article {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  min-height: 150px;
+  min-width: 150px;
+  flex-basis: 24%;
+  margin: auto;
+  margin-top: 10px;
+
+  border-style: double;
+  border-color: #00AAAA;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+footer {
+   background-color: #222222;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+}
+/*
+#clock {
+  width: 15%;
+  height:auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}*/
+#lcd-clock {
+    width: 15%; /* set the width of the clock display */
+  }
+@font-face {
+  font-family: IBM;
+  src: url(assets/IBM-logo.ttf);
+}
+/*Link Thingos*/
+h2 {
+  margin: 0px 0px;
+  font-family: IBM;
+  color: #FCD302FF;
+  text-align: center;
+  font-size: 1.5vw;
+  /*overflow-wrap: normal;*/
+  white-space: nowrap;
+  
+}
+/* Customize each container */
+
+  section:nth-child(1) {
+    background-color: #0000AA;
+  }
+  section:nth-child(2) {
+    background-color: #0000AA;
+  }
+  section:nth-child(3) {
+    background-color: #0000AA;
+  }
+  section:nth-child(4) {
+    background-color: #0000AA;
+  }
+  section:nth-child(5) {
+    background-color: #0000AA;
+  }
+  section:nth-child(6) {
+    background-color: #0000AA;
+  }
+  section:nth-child(7) {
+    background-color: #0000AA;
+  }
+  section:nth-child(8) {
+    background-color: #0000AA;
+  }
+
+
+
+/*Media Queries for Responsive layout */
+@media (max-width: 710px) {
+  h2 {
+    font-size: 4vw
+  }
+  article section {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 5vw;
+  }
+  article section {
+    flex-basis: 100%;
+  }
+}
+
+
+/*Glitch Effect*/
+#title {
+    padding-left: 110px;
+     margin: auto;
+     width: 400px;
+}
+@font-face {
+  font-family: DOS;
+  src: url(assets/DOS.ttf);
+}
+.glitch {
+  font-family: DOS;
+  color: white;
+  font-size: 5vw;
+  position: relative;
+  margin: auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(39px, 9999px, 11px, 0);
+  }
+  5% {
+    clip: rect(51px, 9999px, 36px, 0);
+  }
+  10% {
+    clip: rect(36px, 9999px, 95px, 0);
+  }
+  15% {
+    clip: rect(76px, 9999px, 95px, 0);
+  }
+  20% {
+    clip: rect(62px, 9999px, 62px, 0);
+  }
+  25% {
+    clip: rect(78px, 9999px, 94px, 0);
+  }
+  30% {
+    clip: rect(50px, 9999px, 57px, 0);
+  }
+  35% {
+    clip: rect(95px, 9999px, 40px, 0);
+  }
+  40% {
+    clip: rect(18px, 9999px, 95px, 0);
+  }
+  45% {
+    clip: rect(62px, 9999px, 5px, 0);
+  }
+  50% {
+    clip: rect(93px, 9999px, 45px, 0);
+  }
+  55% {
+    clip: rect(17px, 9999px, 55px, 0);
+  }
+  60% {
+    clip: rect(25px, 9999px, 41px, 0);
+  }
+  65% {
+    clip: rect(51px, 9999px, 7px, 0);
+  }
+  70% {
+    clip: rect(81px, 9999px, 35px, 0);
+  }
+  75% {
+    clip: rect(12px, 9999px, 31px, 0);
+  }
+  80% {
+    clip: rect(24px, 9999px, 47px, 0);
+  }
+  85% {
+    clip: rect(81px, 9999px, 47px, 0);
+  }
+  90% {
+    clip: rect(43px, 9999px, 7px, 0);
+  }
+  95% {
+    clip: rect(84px, 9999px, 65px, 0);
+  }
+  100% {
+    clip: rect(16px, 9999px, 63px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: #222222;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(46px, 9999px, 84px, 0);
+  }
+  5% {
+    clip: rect(18px, 9999px, 9px, 0);
+  }
+  10% {
+    clip: rect(25px, 9999px, 95px, 0);
+  }
+  15% {
+    clip: rect(45px, 9999px, 6px, 0);
+  }
+  20% {
+    clip: rect(15px, 9999px, 38px, 0);
+  }
+  25% {
+    clip: rect(10px, 9999px, 60px, 0);
+  }
+  30% {
+    clip: rect(100px, 9999px, 64px, 0);
+  }
+  35% {
+    clip: rect(96px, 9999px, 88px, 0);
+  }
+  40% {
+    clip: rect(75px, 9999px, 45px, 0);
+  }
+  45% {
+    clip: rect(50px, 9999px, 93px, 0);
+  }
+  50% {
+    clip: rect(56px, 9999px, 26px, 0);
+  }
+  55% {
+    clip: rect(66px, 9999px, 24px, 0);
+  }
+  60% {
+    clip: rect(22px, 9999px, 81px, 0);
+  }
+  65% {
+    clip: rect(28px, 9999px, 68px, 0);
+  }
+  70% {
+    clip: rect(97px, 9999px, 39px, 0);
+  }
+  75% {
+    clip: rect(15px, 9999px, 18px, 0);
+  }
+  80% {
+    clip: rect(84px, 9999px, 28px, 0);
+  }
+  85% {
+    clip: rect(63px, 9999px, 30px, 0);
+  }
+  90% {
+    clip: rect(11px, 9999px, 91px, 0);
+  }
+  95% {
+    clip: rect(73px, 9999px, 13px, 0);
+  }
+  100% {
+    clip: rect(12px, 9999px, 81px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: #222222;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
